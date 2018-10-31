@@ -139,7 +139,8 @@ a {
     color: #fff;
 }
 
-.registration-slash-left {
+.registration-login:after {
+    content: "";
     position: absolute;
     width: 20px;
     height: 124px;
@@ -149,7 +150,8 @@ a {
     transform: skewX(-15deg);
 }
 
-.registration-slash-right {
+.registration-register:before {
+    content: "";
     position: absolute;
     width: 20px;
     height: 124px;
