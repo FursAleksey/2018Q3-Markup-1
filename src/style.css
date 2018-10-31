@@ -10,18 +10,31 @@
 }
 
 @font-face {
-    font-family: Lato-Bold;
+    font-family: Lato-Heavy;
+    src: url("../fonts/lato/Lato-Heavy.ttf");
+}
 
+@font-face {
+    font-family: Lato-Semibold;
+    src: url("../fonts/lato/Lato-Semibold.ttf");
+}
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url("../fonts/lato/Lato-Regular.ttf");
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+
     margin: 0;
 }
 
 header {
     background-image: url("../img/Header BG@1X.jpeg");
     width: 100%;
-    height: 961px;
+    height: 1085px;
 }
 
 .header-background {
@@ -179,4 +192,112 @@ a {
 .registration-register:hover > span {
     transition: .5s;
     border-bottom: 1px solid #fff;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.domain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 578px;
+
+}
+
+.domain h2 {
+    font-family: Lato-Heavy;
+    font-size: 24px;
+    margin: 0;
+}
+
+.domain p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin:25px 0;
+}
+
+.domain-choise {
+    align-items: center;
+    width: 890px;
+    height: 50px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+
+    border: 1px solid black;
+}
+
+.domain-choise .table {
+    margin: 10px 15px;
+}
+
+.domain-choise .row {
+    display: flex;
+    align-items: center;
+}
+
+.domain-choise .cell {
+    padding: 5px 15px;
+    border-left: 1px solid #C9C9C9;
+    font-family: Lato-Semibold;
+    font-size: 16px;
+    color: rgba(203, 203, 203, 255);
+}
+
+.domain-choise .cell:first-child {
+    border-left: none;
+    padding-left: 0;
+}
+
+.domain-choise #question {
+    font-family: Lato-Semibold;
+    font-size: 15px;
+    color: rgba(134, 134, 134, 255);
+    width: 700px;
+}
+
+.domain-price {
+    width: 890px;
+    height: 200px;
+    border: 1px solid rgba(203, 203, 203, 255);;
+}
+
+.domain-price .table {
+    margin: 15px 20px;
+}
+
+.domain-price .row {
+    display: flex;
+}
+
+.domain-price .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 215px;
+    height: 85px;
+
+    margin: 0 6px;
+
+    font-family: Lato-Regular;
+    font-size: 14px;
+    color: rgba(203, 203, 203, 255);
+}
+
+.line {
+    display: block;
+    position: relative;
+    top: 5px;
+    vertical-align: center;
+    width: 1px;
+    height: 75px;
+    background-color: rgba(203, 203, 203, 255);
+}
+.domain-price .table .row:first-child .cell {
+    border-bottom: 1px solid rgba(203, 203, 203, 255);;
 }
