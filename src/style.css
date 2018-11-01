@@ -229,7 +229,7 @@ a {
     margin-top: 25px;
     margin-bottom: 40px;
 
-    border: 1px solid black;
+    border: 1px solid rgba(203, 203, 203, 255);
 }
 
 .domain-choise .table {
@@ -263,7 +263,7 @@ a {
 
 .domain-price {
     width: 890px;
-    height: 200px;
+    height: auto;
     border: 1px solid rgba(203, 203, 203, 255);;
 }
 
@@ -273,31 +273,35 @@ a {
 
 .domain-price .row {
     display: flex;
+    justify-content: space-between;
+    height: 85px;
 }
 
 .domain-price .cell {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 215px;
-    height: 85px;
+    width: 100%;
 
     margin: 0 6px;
 
     font-family: Lato-Regular;
     font-size: 14px;
     color: rgba(203, 203, 203, 255);
+
+    border-bottom: 1px solid rgba(203, 203, 203, 255);
 }
 
 .line {
     display: block;
     position: relative;
     top: 5px;
-    vertical-align: center;
-    width: 1px;
     height: 75px;
-    background-color: rgba(203, 203, 203, 255);
+    border-left: 1px solid rgba(203, 203, 203, 255);
 }
-.domain-price .table .row:first-child .cell {
-    border-bottom: 1px solid rgba(203, 203, 203, 255);;
+
+.domain-price .row:last-child .cell {
+    border-bottom: none;
 }
+
+
