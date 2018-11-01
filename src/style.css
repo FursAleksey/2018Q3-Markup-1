@@ -304,4 +304,20 @@ a {
     border-bottom: none;
 }
 
+.packages {
+    width: 100%;
+    height: 766px;
+}
 
+.packages-background-img {
+    width: 100%;
+    height: 450px;
+
+    background-position: 50% 38%;
+    background-size: 100%;
+}
+
+.packages-background-blank {
+    width: 100%;
+    height: 450px;
+}
