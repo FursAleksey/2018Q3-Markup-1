@@ -28,6 +28,16 @@
     src: url("../fonts/lato/Lato-Regular.ttf");
 }
 
+@font-face {
+    font-family: Lato-Black;
+    src: url("../fonts/lato/Lato-Black.ttf");
+}
+
+@font-face {
+    font-family: Lato-Thin;
+    src: url("../fonts/lato/Lato-Thin.ttf");
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -336,7 +346,7 @@ a {
     width: 100%;
 }
 
-.packages-price .package {
+.package {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -349,7 +359,7 @@ a {
     margin: 0 30px;
 }
 
-.package .package-name {
+.package-name {
     width: 200px;
     margin: 0;
 
@@ -427,3 +437,117 @@ a {
     font-size: 16px;
     color: rgba(40, 40, 40, 255);
 }
+
+.aboutus {
+    width: 1200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.aboutus-info {
+    display: flex;
+    width: 1200px;
+    margin: 110px 0;
+}
+
+.aboutus-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 520px;
+    padding-right: 100px;
+}
+
+.aboutus-left h2 {
+    margin: 0;
+
+    font-family: Lato-Black;
+    font-size: 35px;
+    line-height: 30px;
+}
+
+.aboutus-left span {
+    font-family: Lato-Semibold;
+    padding-left: 10px;
+}
+
+.aboutus-left p {
+    width: 420px;
+    margin: 20px 0;
+
+    text-align: justify;
+    font-family: Lato-Thin;
+    font-size: 18px;
+    line-height: 28px;
+    word-spacing: -1px;
+}
+
+.aboutus-right {
+    display: flex;
+    justify-content: space-between;
+    width: 680px;
+    padding: 0 15px 0 100px;
+}
+
+.aboutus-right-employee .photo {
+    width: 90px;
+    height: 90px;
+
+    border-radius: 100%;
+    border: 5px solid #e5e5e5;
+    overflow: hidden;
+}
+
+.aboutus-right-employee .name {
+    margin: 10px 0 5px 0;
+
+    font-family: Lato-Semibold;
+    font-size: 16px;
+    color: rgba(48, 48, 48, 255);
+    text-align: center;
+
+}
+
+.aboutus-right-employee .position {
+    margin: 5px 0 5px 0;
+
+    font-family: Lato-Regular;
+    font-size: 15px;
+    color: rgba(142, 142, 142, 255);
+    text-align: center;
+}
+
+.aboutus-right-employee .links {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #bfbfbf;
+    font-size: 15px;
+    transition: .3s;
+}
+
+
+.aboutus-right-employee .link:not(:hover) {
+    color: #bfbfbf;
+    transition: .3s;
+}
+
+.aboutus-right-employee .link:hover {
+    font-size: 15px;
+    transition: .3s;
+    color: #1f89ba;
+}
+
+
+
+
+
+
+
+
+
+
