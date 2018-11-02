@@ -313,11 +313,31 @@ a {
     width: 100%;
     height: 450px;
 
+    background-image: url("../img/Packages Photo@1X.png");
     background-position: 50% 38%;
     background-size: 100%;
+
+}
+
+.packages-price {
+    position: absolute;
+    top: 1850px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.packages-price .package {
+    width: 255px;
+    height: 565px;
+
+    border-top: 5px solid red;
+    background-color: #fff;
+    margin: 0 30px;
 }
 
 .packages-background-blank {
     width: 100%;
     height: 450px;
 }
+
