@@ -1,0 +1,581 @@
+@font-face {
+    font-family: Lato-Medium;
+    src: url("../fonts/lato/Lato-Medium.ttf");
+}
+
+@font-face {
+    font-family: Lato-Light;
+    src: url("../fonts/lato/Lato-Light.ttf");
+}
+
+@font-face {
+    font-family: Lato-Bold;
+    src: url("../fonts/lato/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: Lato-Heavy;
+    src: url("../fonts/lato/Lato-Heavy.ttf");
+}
+
+@font-face {
+    font-family: Lato-Semibold;
+    src: url("../fonts/lato/Lato-Semibold.ttf");
+}
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url("../fonts/lato/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: Lato-Black;
+    src: url("../fonts/lato/Lato-Black.ttf");
+}
+
+@font-face {
+    font-family: Lato-Thin;
+    src: url("../fonts/lato/Lato-Thin.ttf");
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+}
+
+header {
+    background-image: url("../img/Header BG@1X.jpeg");
+    width: 100%;
+    height: 1085px;
+}
+
+.header-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 961px;
+
+    background-color: #000;
+    opacity: 0.85;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 90px;
+
+    border-bottom: 1px solid #2e2f31;
+}
+
+.nav-image {
+
+}
+
+.nav-link {
+    margin: 0 35px;
+    padding: 32px 0;
+
+    font-family: Lato-Medium;
+    font-size: 16px;
+    color: #fff;
+}
+
+.nav-link:hover {
+    transition: .5s;
+    border-bottom: 1px solid #fff;
+}
+
+.nav-link:not(:hover) {
+    transition: .5s;
+    border-bottom: 1px solid #2e2f31;
+}
+
+.nav-link:first-child {
+    margin-left: 0;
+}
+
+.nav-link:last-child {
+    margin-right: 0;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    color: #fff;
+}
+
+.hello {
+    font-size: 72px;
+    font-family: MyriadPro-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-weight: bold;
+}
+
+.tagline {
+    font-size: 32px;
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia-Italic, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+}
+
+.registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 124px;
+
+    text-decoration: none;
+    font-family: Lato-Bold;
+    font-size: 22px;
+
+}
+
+.registration-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: #21424a;
+    color: #fff;
+
+}
+
+.registration-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+
+    background-color: #2fac6c;
+    color: #fff;
+}
+
+.registration-login:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 124px;
+    right: 50%;
+
+    background-color: #21424A;
+    transform: skewX(-15deg);
+}
+
+.registration-register:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 124px;
+    left: 50%;
+
+    background-color: #2fac6c;
+    transform: skewX(-15deg);
+}
+
+.registration-login:not(:hover) > span {
+    transition: .5s;
+    border-bottom: 1px solid #21424A;
+}
+
+.registration-login:hover > span {
+    transition: .5s;
+    border-bottom: 1px solid #fff;
+}
+
+.registration-register:not(:hover) > span {
+    transition: .5s;
+    border-bottom: 1px solid #2FAC6C;
+}
+
+.registration-register:hover > span {
+    transition: .5s;
+    border-bottom: 1px solid #fff;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.domain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 578px;
+
+}
+
+.domain h2 {
+    font-family: Lato-Heavy;
+    font-size: 24px;
+    margin: 0;
+}
+
+.domain p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin:25px 0;
+}
+
+.domain-choise {
+    align-items: center;
+    width: 890px;
+    height: 50px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+
+    border: 1px solid rgba(203, 203, 203, 255);
+}
+
+.domain-choise .table {
+    margin: 10px 15px;
+}
+
+.domain-choise .row {
+    display: flex;
+    align-items: center;
+}
+
+.domain-choise .cell {
+    padding: 5px 15px;
+    border-left: 1px solid #C9C9C9;
+    font-family: Lato-Semibold;
+    font-size: 16px;
+    color: rgba(203, 203, 203, 255);
+}
+
+.domain-choise .cell:first-child {
+    border-left: none;
+    padding-left: 0;
+}
+
+.domain-choise #question {
+    font-family: Lato-Semibold;
+    font-size: 15px;
+    color: rgba(134, 134, 134, 255);
+    width: 700px;
+}
+
+.domain-price {
+    width: 890px;
+    height: auto;
+    border: 1px solid rgba(203, 203, 203, 255);;
+}
+
+.domain-price .table {
+    margin: 15px 20px;
+}
+
+.domain-price .row {
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+}
+
+.domain-price .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    margin: 0 6px;
+
+    font-family: Lato-Regular;
+    font-size: 14px;
+    color: rgba(203, 203, 203, 255);
+
+    border-bottom: 1px solid rgba(203, 203, 203, 255);
+}
+
+.line {
+    display: block;
+    position: relative;
+    top: 5px;
+    height: 75px;
+    border-left: 1px solid rgba(203, 203, 203, 255);
+}
+
+.domain-price .row:last-child .cell {
+    border-bottom: none;
+}
+
+.packages {
+    width: 100%;
+    height: 766px;
+}
+
+.packages-background-img {
+    width: 100%;
+    height: 450px;
+
+    background-image: url("../img/Packages Photo@1X.png");
+    background-position: 50% 38%;
+    background-size: 100%;
+
+}
+
+.packages-background-blank {
+    width: 100%;
+    height: 450px;
+}
+
+.packages-price {
+    position: absolute;
+    top: 1850px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.package {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 255px;
+    height: 565px;
+
+    border-top: 5px solid red;
+    border: 1px solid black;
+    background-color: #fff;
+    margin: 0 30px;
+}
+
+.package-name {
+    width: 200px;
+    margin: 0;
+
+    text-align: center;
+    font-family: Lato-Bold;
+    font-size: 16px;
+    color: rgba(40, 40, 40, 255);
+
+}
+
+.package-options {
+    padding: 10px 0;
+    margin: 20px 0;
+    border-top: 1px solid rgba(180, 180, 180, 255);
+    border-bottom: 1px solid rgba(180, 180, 180, 255);
+}
+
+.package-option {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 0;
+}
+
+.package-option h3{
+    margin: 0;
+
+    font-family: Lato-Light;
+    font-size: 16px;
+    color: rgba(180, 180, 180, 255);
+}
+
+.package-option span {
+    font-family: Lato-Bold;
+    font-size: 16px;
+    color: #f9d423;
+}
+
+.package-cost {
+    border-bottom: 3px solid yellow;
+    padding: 10px 15px 3px 15px;
+    margin-bottom: 20px;
+}
+
+.package-cost span{
+    font-family: Lato-Bold;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(44, 44, 44, 255);
+}
+
+.package-cost .dollar {
+    position: relative;
+    bottom: 2px;
+    left: 3px;
+    font-family: Lato-Bold;
+    font-size: 17px;
+}
+
+.package-cost .month {
+    position: relative;
+    bottom: 4px;
+    right: 4px;
+
+    font-family: Lato-Regular;
+    font-size: 13px;
+    color: rgba(180, 180, 180, 255);
+}
+
+.package a {
+    text-decoration: none;
+    font-family: Lato-Bold;
+    font-size: 16px;
+    color: rgba(40, 40, 40, 255);
+}
+
+.aboutus {
+    width: 1200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.aboutus-info {
+    display: flex;
+    width: 1200px;
+    margin: 110px 0;
+}
+
+.aboutus-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 520px;
+    padding-right: 100px;
+}
+
+.aboutus-left h2 {
+    margin: 0;
+
+    font-family: Lato-Black;
+    font-size: 35px;
+    line-height: 30px;
+}
+
+.aboutus-left span {
+    font-family: Lato-Semibold;
+    padding-left: 10px;
+}
+
+.aboutus-left p {
+    width: 420px;
+    margin: 20px 0;
+
+    text-align: justify;
+    font-family: Lato-Thin;
+    font-size: 18px;
+    line-height: 28px;
+    word-spacing: -1px;
+}
+
+.aboutus-right {
+    display: flex;
+    justify-content: space-between;
+    width: 680px;
+    padding: 0 15px 0 100px;
+}
+
+.aboutus-right-employee .photo {
+    width: 90px;
+    height: 90px;
+
+    border-radius: 100%;
+    border: 5px solid #e5e5e5;
+    overflow: hidden;
+}
+
+.aboutus-right-employee .name {
+    margin: 10px 0 5px 0;
+
+    font-family: Lato-Semibold;
+    font-size: 16px;
+    color: rgba(48, 48, 48, 255);
+    text-align: center;
+
+}
+
+.aboutus-right-employee .position {
+    margin: 5px 0 5px 0;
+
+    font-family: Lato-Regular;
+    font-size: 15px;
+    color: rgba(142, 142, 142, 255);
+    text-align: center;
+}
+
+.aboutus-right-employee .links {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #bfbfbf;
+    font-size: 15px;
+    transition: .3s;
+}
+
+.aboutus-right-employee .link:not(:hover) {
+    color: #bfbfbf;
+    transition: .3s;
+}
+
+.aboutus-right-employee .link:hover {
+    font-size: 15px;
+    transition: .3s;
+    color: #1f89ba;
+}
+
+.slider {
+    width: 100%;
+    height: 193px;
+
+    background-image: url("../img/Comments BG Photo@1X.png");
+}
+
+.slider-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 193px;
+
+    background-color: #000;
+    opacity: .7;
+}
+
+.slider-content p {
+    width: 890px;
+    margin: 0;
+    margin-bottom: 15px;
+
+    font-family: Lato-Light;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+}
+
+.slider-content h3 {
+    margin: 0;
+
+    font-family: Lato-Bold;
+    font-size: 20px;
+    color: #fff;
+}
